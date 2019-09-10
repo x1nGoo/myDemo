@@ -1,0 +1,110 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.noPaddingTop {
+  padding-top: 0 !important;
+}
+
+:global {
+  .ant-drawer-body {
+    padding: 0;
+  }
+  .ant-drawer-content-wrapper {
+    // width: 230px !important;
+  }
+}
+
+/**滚动条样式**/
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  cursor: pointer!important;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  cursor: pointer!important;
+  border: 5px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+  cursor: pointer!important;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  min-height: 20px;
+  background-clip: content-box;
+  cursor: pointer!important;
+  box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;
+}
+
+::-webkit-scrollbar-corner {
+  cursor: pointer!important;
+  background: transparent;
+}
+
+.formItemMarginBottom {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.formItemMarginBottom6 {
+  :global {
+    .ant-form-item {
+      margin-bottom: 6px!important;
+    }
+  }
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallTable {
+  :global {
+    .ant-table-small > .ant-table-content > .ant-table-body {
+      margin: 0;
+    }
+    .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead {
+      background: #fafafa;
+    }
+  }
+}
